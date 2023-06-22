@@ -2,13 +2,13 @@
 /**
  * display_stack - displays the stack
  * @stack_head: pointer to the head of the stack
- * @line_number: not used
- * Return: no return
+ * @counter: not used for the time being
+ * Return: none
 */
-void display_stack(stack_t **stack_head, unsigned int line_number)
+void display_stack(stack_t **stack_head, unsigned int counter)
 {
 	stack_t *temp;
-	(void)line_number;
+	(void)counter;
 
 	temp = *stack_head;
 	if (temp == NULL)

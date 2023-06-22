@@ -56,13 +56,13 @@ typedef struct instruction_s
 } instruction_t;
 void divide_top_two(stack_t **stack_head, unsigned int counter);
 void perform_modulo(stack_t **stack_head, unsigned int counter);
-void display_stack(stack_t **stack_head, unsigned int line_number);
+void display_stack(stack_t **stack_head, unsigned int counter);
 void print_string(stack_t **stack_head, unsigned int counter);
 void rotate_stack_bottom(stack_t **stack_head, __attribute__((unused)) unsigned int counter);
 void add_top_two(stack_t **stack_head, unsigned int counter);
 int execute_opcode(char *content, stack_t **stack, unsigned int line_num, FILE *file);
 void print_char(stack_t **stack_head, unsigned int counter);
-void add_node(stack_t **stack_head, unsigned int line_number);
+void add_node(stack_t **stack_head, unsigned int counter);
 void print_top(stack_t **stack_head, unsigned int counter);
 void push_node(stack_t **stack_head, int value);
 void multiply_top_two(stack_t **stack_head, unsigned int counter);

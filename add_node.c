@@ -3,10 +3,10 @@
 /**
  * add_node - The stack_head gets added on to
  * @stack_head: _headstack_head head
- * @line_number: line no.
+ * @counter: line no.
  * Return: None
 */
-void add_node(stack_t **stack_head, unsigned int line_number)
+void add_node(stack_t **stack_head, unsigned int counter)
 {
 	int num, i = 0, flag = 0;
 
@@ -20,14 +20,14 @@ void add_node(stack_t **stack_head, unsigned int line_number)
 				flag = 1; }
 		if (flag == 1)
 		{
-			fprintf(stderr, "L%d: usage: push integer\n", line_number);
+			fprintf(stderr, "L%d: usage: push integer\n", counter);
 			fclose(bus.file);
 			free(bus.content);
 			free_list(*stack_head);
 			exit(EXIT_FAILURE); }}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", line_number);
+		fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(bus.file);
 		free(bus.content);
 		free_list(*stack_head);
