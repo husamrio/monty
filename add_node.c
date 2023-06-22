@@ -17,21 +17,21 @@ void add_node(stack_t **stack_head, unsigned int line_number)
 		for (; bus.arg[i] != '\0'; i++)
 		{
 			if (bus.arg[i] > 57 || bus.arg[i] < 48)
-				flag = 1;}
+				flag = 1; }
 		if (flag == 1)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", line_number);
 			fclose(bus.file);
 			free(bus.content);
 			free_list(*stack_head);
-			exit(EXIT_FAILURE);}}
+			exit(EXIT_FAILURE); }}
 	else
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		fclose(bus.file);
 		free(bus.content);
 		free_list(*stack_head);
-		exit(EXIT_FAILURE);}
+		exit(EXIT_FAILURE); }
 	num = atoi(bus.arg);
 	if (bus.lifi == 0)
 		push_node(stack_head, num);

@@ -17,3 +17,4 @@ void printst(stack_t **stack_head, unsigned int line_number)
 	}
 	printf("%d\n", (*stack_head)->n);
 }
+
